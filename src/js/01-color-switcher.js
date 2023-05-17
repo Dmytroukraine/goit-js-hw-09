@@ -3,17 +3,13 @@ const refs = {
             startBtn: document.querySelector('[data-start]'),
         stopBtn: document.querySelector('[data-stop]'),
   };
-
-
   
   let intervalId = null;
   
-
   function getRandomHexColor() {
         return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
   }
   
-
   const onStartBtnClick = () => {
         refs.body.style.backgroundColor = getRandomHexColor();
         intervalId = setInterval(() => {
@@ -33,6 +29,4 @@ const refs = {
 
   
     refs.startBtn.addEventListener('click', onStartBtnClick);
-
-    
-    refs.stopBtn.addEventListener('click', onStopBtnClick);
+       refs.stopBtn.addEventListener('click', onStopBtnClick);
