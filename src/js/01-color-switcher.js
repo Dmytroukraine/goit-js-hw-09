@@ -4,6 +4,7 @@ const refs = {
         stopBtn: document.querySelector('[data-stop]'),
   };
 
+
   
   let intervalId = null;
   
@@ -33,5 +34,5 @@ const refs = {
   
     refs.startBtn.addEventListener('click', onStartBtnClick);
 
-
+    
     refs.stopBtn.addEventListener('click', onStopBtnClick);
