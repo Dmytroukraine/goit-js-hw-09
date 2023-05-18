@@ -36,7 +36,7 @@ const fp = flatpickr(dateInputEl, options);
 const handleOnStartClick = () => {
   timerId = setInterval(() => {
     const currentDate = new Date();
-    const ms = selectedDate.getTime() - currentDate.getTime();
+    const ms = selectedDate.getTime() - currentDate.getTime(); 
     if (selectedDate.getTime() <= currentDate.getTime()) {
       clearInterval(timerId);
       return;
