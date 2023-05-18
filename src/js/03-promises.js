@@ -1,11 +1,3 @@
-// function createPromise(position, delay) {
-//   const shouldResolve = Math.random() > 0.3;
-//   if (shouldResolve) {
-//     // Fulfill
-//   } else {
-//     // Reject
-//   }
-// }
     import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 Notiflix.Notify.init({ position: 'center-top' });
@@ -31,11 +23,9 @@ function createPromise(position, delay) {
         }
     }, delay);
   });
-      // const shouldResolve = Math.random() > 0.3;
-      // const result = {position, delay}
+      
 }
-// const stepValue = Number(stepEl.value);
-  // const amountValue = Number(amountEl.value);
+
 formEl.addEventListener('submit', handleSubmit)
 
 function handleSubmit(event) {
@@ -51,13 +41,13 @@ function handleSubmit(event) {
   
 
   for (let i = 1; i <= amountValue; i += 1) {
-          createPromise(i, delayValue) // 
+          createPromise(i, delayValue)  
           .then(({ position, delay }) => {
-      Notiflix.Notify.success(`Fulfilled promise ${position} in ${delay}ms`); // 
+      Notiflix.Notify.success(`Fulfilled promise ${position} in ${delay}ms`); 
     })
 
     .catch(({ position, delay }) => {
-          Notiflix.Notify.failure(`Rejected promise ${position} in ${delay}ms`); // 
+          Notiflix.Notify.failure(`Rejected promise ${position} in ${delay}ms`); 
     });
 
     delayValue += stepValue;
