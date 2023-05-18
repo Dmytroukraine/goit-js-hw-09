@@ -1,20 +1,4 @@
 
-
-// const onStartBtnClick = () => {
- 
-//   timer.start(selectedDate, currentDate);
-//   refs.stopBtn.textContent = 'Stop';
-
- 
-// };
-// const addLeadingZero = value => {
-//   return String(value).padStart(2, '0');
-// };
-
-// flatpickr('#datetime-picker', options);
-// refs.startBtn.addEventListener('click', onStartBtnClick);
-// refs.stopBtn.addEventListener('click', onStopBtnClick);
-
 import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
